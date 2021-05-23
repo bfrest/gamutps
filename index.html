@@ -12,7 +12,10 @@
       <div class="info">
         <h3>Gamutps is currently under maintenance</h3>
         <h4>Please contact us with inquries</h4>
-        <img height="100px" src="https://www.iconsdb.com/icons/preview/white/email-xxl.png" />
+        <img
+          height="100px"
+          src="https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1621800499/Gamut/mail_1.svg"
+        />
       </div>
     </div>
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
@@ -20,7 +23,7 @@
     <script>
       particlesJS("particles-js", {
         particles: {
-          number: { value: 80, density: { enable: true, value_area: 800 } },
+          number: { value: 80, density: { enable: true, value_area: 890 } },
           color: { value: "#236e1f" },
           shape: {
             type: "circle",
@@ -40,14 +43,14 @@
           },
           line_linked: {
             enable: true,
-            distance: 150,
+            distance: 180,
             color: "#3fa239",
             opacity: 0.4,
             width: 0.4734960581453156,
           },
           move: {
             enable: true,
-            speed: 2,
+            speed: 0.3,
             direction: "none",
             random: true,
             straight: false,
@@ -59,12 +62,12 @@
         interactivity: {
           detect_on: "window",
           events: {
-            onhover: { enable: false, mode: "repulse" },
+            onhover: { enable: true, mode: "grab" },
             onclick: { enable: false, mode: "push" },
             resize: true,
           },
           modes: {
-            grab: { distance: 1102.8265925055737, line_linked: { opacity: 0.06475111290975316 } },
+            grab: { distance: 150, line_linked: { opacity: 0.7 } },
             bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
             repulse: { distance: 200, duration: 0.4 },
             push: { particles_nb: 4 },
