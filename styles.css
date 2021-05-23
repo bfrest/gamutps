@@ -3,6 +3,7 @@ body {
   margin: 0;
   font: Arial, Helvetica, sans-serif;
   font-size: 10px;
+  background-color: #000;
 }
 canvas {
   display: block;
