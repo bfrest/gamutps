@@ -53,21 +53,8 @@ canvas {
   color: white;
   font-size: 2rem;
   position: fixed;
-  top: 30vh;
-  left: 25%;
+  top: 10vh;
+  left: 5vw;
   padding: 25px;
   text-align: center;
-}
-
-@media (max-width: 300px) {
-  .info {
-    font-size: 1.2rem;
-    left: 0.5rem;
-    top: 10vh;
-    color: green;
-  }
-
-  img {
-    height: 50px;
-  }
 }
