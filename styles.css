@@ -58,3 +58,14 @@ canvas {
   padding: 25px;
   text-align: center;
 }
+
+@media (max-width: 600px) {
+  .info {
+    font-size: 1.2rem;
+    left: 1rem;
+  }
+
+  img {
+    height: 50px;
+  }
+}
