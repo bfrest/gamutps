@@ -22,7 +22,7 @@
       particlesJS("particles-js", {
         particles: {
           number: { value: 80, density: { enable: true, value_area: 800 } },
-          color: { value: "#236e1f" },
+          color: { value: "#2cb103" },
           shape: {
             type: "circle",
             stroke: { width: 0, color: "#000000" },
@@ -30,25 +30,19 @@
             image: { src: "img/github.svg", width: 100, height: 100 },
           },
           opacity: {
-            value: 0.8049432988470365,
-            random: true,
+            value: 0.5,
+            random: false,
             anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
           },
           size: {
-            value: 2,
+            value: 3,
             random: true,
-            anim: { enable: false, speed: 0, size_min: 0.1, sync: false },
+            anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
           },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#3fa239",
-            opacity: 0.4,
-            width: 0.4734960581453156,
-          },
+          line_linked: { enable: true, distance: 150, color: "#2cb103", opacity: 0.4, width: 1 },
           move: {
             enable: true,
-            speed: 2,
+            speed: 0.7,
             direction: "none",
             random: true,
             straight: false,
@@ -58,14 +52,14 @@
           },
         },
         interactivity: {
-          detect_on: "window",
+          detect_on: "canvas",
           events: {
-            onhover: { enable: false, mode: "repulse" },
-            onclick: { enable: false, mode: "push" },
+            onhover: { enable: true, mode: "grab" },
+            onclick: { enable: false, mode: "remove" },
             resize: true,
           },
           modes: {
-            grab: { distance: 1102.8265925055737, line_linked: { opacity: 0.06475111290975316 } },
+            grab: { distance: 215.77042027282963, line_linked: { opacity: 1 } },
             bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
             repulse: { distance: 200, duration: 0.4 },
             push: { particles_nb: 4 },
