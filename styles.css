@@ -11,7 +11,7 @@ body {
 }
 
 div {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,6 +48,7 @@ li img {
   color: #fefefe;
   font-size: 1.4rem;
   position: relative;
+  height: 75vh;
 }
 
 #header h2 {
@@ -55,6 +56,22 @@ li img {
 }
 
 #about {
+  border: 2px solid red;
+  margin-top: 25vh;
+}
+
+.card {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid hsla(0, 0%, 89%, 0.561);
+  max-height: 30%;
+  width: 80%;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #71bf44;
 }
 
 #services {
