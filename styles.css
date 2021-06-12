@@ -87,10 +87,11 @@ li img {
 .cardHeader {
   display: flex;
   flex-direction: row;
+  align-self: flex-start;
 }
 
 .cardHeader img {
-  margin: 0 20px 0 -10px;
+  margin: 0 10px 0 0;
 }
 
 .card h3 {
