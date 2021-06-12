@@ -10,6 +10,13 @@ body {
   color: black;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  color: #71bf44;
+}
+
 div {
   display: flex;
   flex-direction: column;
@@ -71,6 +78,11 @@ li img {
 
 #about {
   margin-top: 1rem;
+}
+
+.intro {
+  width: 85%;
+  padding: 25px 0;
 }
 
 .card {
