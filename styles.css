@@ -95,20 +95,24 @@ li img {
   width: 80%;
   box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
   font-size: 1rem;
+  text-align: center;
+  justify-content: center;
 }
 
 .cardHeader {
   display: flex;
   flex-direction: row;
-  align-self: flex-start;
+  align-self: center;
 }
 
 .cardHeader img {
-  margin: 0 15px 0 0;
+  margin: -15px 10px 0 0;
 }
 
 .card h3 {
-  color: #71bf44;
+  text-decoration: underline;
+  color: black;
+  text-decoration-color: #71bf44;
 }
 
 #services {
