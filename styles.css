@@ -41,7 +41,7 @@ nav ul {
   align-items: center;
   width: 100%;
   margin-left: -40px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -86,36 +86,81 @@ li img {
   padding: 25px 0;
 }
 
+.serviceCards {
+  display: flex;
+  flex-direction: column;
+}
+
 .card {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
   margin-bottom: 3rem;
   border-radius: 5px;
   border: 2px solid hsla(0, 0%, 89%, 0.561);
-  max-height: 30%;
-  width: 80%;
+  max-height: 40%;
+  max-width: 90%;
   box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
   font-size: 1rem;
-  text-align: center;
-  justify-content: center;
+}
+
+.card p {
+  align-self: center;
+  width: 90%;
+  margin-left: 3rem;
 }
 
 .cardHeader {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-self: center;
 }
 
 .cardHeader img {
-  margin: -15px 10px 0 0;
 }
 
 .card h3 {
   text-decoration: underline;
-  color: black;
+  color: #2d3436;
   text-decoration-color: #71bf44;
 }
 
 #services {
+}
+
+.step {
+  height: 15rem;
+  width: 100vw;
+  background: none;
+  z-index: 2;
+  color: white;
+  margin-bottom: 5rem;
+}
+
+.grayOverlay {
+  background-color: hsla(120, 1%, 28%, 0.548);
+  height: 100%;
+  width: 100%;
+}
+
+.one {
+  background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624050151/Gamut/Screen_Shot_2021-06-18_at_3.02.12_PM.png");
+  background-size: cover;
+}
+
+.two {
+  background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624049175/Gamut/Road-_Back_Rock_Wall_and_Hifiker_SG.jpg");
+  background-size: cover;
+}
+
+.three {
+  background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624049175/Gamut/Finished_Roadway.jpg");
+  background-size: cover;
+}
+
+.howItWorks {
+  font-size: 2rem;
 }
 
 #contact {
