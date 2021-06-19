@@ -178,6 +178,37 @@ h2 {
   text-align: center;
 }
 
+.anotherStep {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.leftText {
+  margin-left: -40px;
+}
+
+.rightText {
+}
+
+.leftPic {
+  align-self: flex-start;
+  margin: 0 50px 20px -30px;
+}
+
+.rightPic {
+  align-self: flex-end;
+  margin: 0 -70px 20px 20px;
+}
+
+.picText {
+  color: black;
+  width: 40%;
+  font-size: 0.8rem;
+}
+
 .howItWorks {
   font-size: 2rem;
 }
