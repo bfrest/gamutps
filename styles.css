@@ -105,10 +105,15 @@ li img {
   font-size: 1rem;
 }
 
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
 .card p {
   align-self: center;
-  width: 90%;
-  margin-left: 3rem;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .cardHeader {
@@ -136,6 +141,7 @@ li img {
   z-index: 2;
   color: white;
   margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .grayOverlay {
@@ -145,18 +151,24 @@ li img {
 }
 
 .one {
-  background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624050151/Gamut/Screen_Shot_2021-06-18_at_3.02.12_PM.png");
-  background-size: cover;
+  background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624135987/Gamut/Screen_Shot_2021-06-19_at_2.50.31_PM.png");
+  background-size: contain;
+  margin: 0;
+  padding: 0;
 }
 
 .two {
-  background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624049175/Gamut/Road-_Back_Rock_Wall_and_Hifiker_SG.jpg");
-  background-size: cover;
+  background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624137007/Gamut/Screenshot_8.png");
+  background-size: contain;
+  margin: 0;
+  padding: 0;
 }
 
 .three {
-  background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624049175/Gamut/Finished_Roadway.jpg");
+  background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624049156/Gamut/7C8A9A02-674D-4A27-8A52-6288CD9D14A8.heic");
   background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 .howItWorks {
