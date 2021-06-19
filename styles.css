@@ -144,8 +144,12 @@ h2 {
   margin-bottom: 2rem;
 }
 
+.step p {
+  width: 80%;
+}
+
 .grayOverlay {
-  background-color: hsla(120, 1%, 28%, 0.548);
+  background-color: hsla(120, 1%, 28%, 0.7);
   height: 100%;
   width: 100%;
 }
@@ -153,22 +157,25 @@ h2 {
 .one {
   background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624135987/Gamut/Screen_Shot_2021-06-19_at_2.50.31_PM.png");
   background-size: contain;
-  margin: 0;
+  margin: 0 0 5rem 0;
   padding: 0;
+  text-align: center;
 }
 
 .two {
   background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624137007/Gamut/Screenshot_8.png");
   background-size: contain;
-  margin: 0;
+  margin: 0 0 5rem 0;
   padding: 0;
+  text-align: center;
 }
 
 .three {
   background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624049156/Gamut/7C8A9A02-674D-4A27-8A52-6288CD9D14A8.heic");
   background-size: cover;
-  margin: 0;
+  margin: 0 0 5rem 0;
   padding: 0;
+  text-align: center;
 }
 
 .howItWorks {
@@ -177,6 +184,7 @@ h2 {
 
 #contact {
   height: 50vh;
+  margin-bottom: 25vh;
 }
 
 form {
@@ -198,7 +206,7 @@ input {
 }
 
 textarea {
-  height: 10rem;
+  height: 20rem;
 }
 
 button {
