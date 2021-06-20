@@ -77,55 +77,36 @@
         <p> We also offer other things..like these options here </p>
       </div>
 
-      <!-- <div class="steps">
-        <p class="howItWorks">Our Process</p>
-        <div class="step one">
-          <div class="grayOverlay"
-            ><p>Fill out form for 3D models Here and/or the Takeoff form Here</p></div
-          >
-        </div>
-        <div class="step two">
-          <div class="grayOverlay"
-            ><p>We build the model exactly to plan and get detailed takeoffs from plans</p></div
-          >
-        </div>
-        <div class="step three">
-          <div class="grayOverlay"
-            ><p>Load File on machine, allowing you to build your project exactly per plan</p></div
-          >
-        </div>
-      </div> -->
-
       <div class="steps">
         <p class="howItWorks">Our Process</p>
         <p></p>
 
-        <div class="anotherStep">
+        <div class="step stepOne">
           <img
-            class="rightPic animate__animated animate__fadeInRightBig"
+            class="rightPic"
             src="https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624212414/Gamut/form-image.png"
           />
-          <p class="picText leftText animate__animated animate__fadeInLeftBig"
+          <p class="picText leftText"
             >Fill out form for 3D models Here and/or the Takeoff form Here.</p
           >
         </div>
 
-        <div class="anotherStep">
+        <div class="step stepTwo">
           <img
-            class="leftPic animate__animated animate__fadeInLeftBig"
+            class="leftPic"
             src="https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624212414/Gamut/Road-_Back_Rock_Wall_and_Hifiker_SG_1.png"
           />
-          <p class="picText rightText animate__animated animate__fadeInRightBig"
+          <p class="picText rightText"
             >We build your model exactly to plan and get detailed takeoffs from plans.</p
           >
         </div>
 
-        <div class="anotherStep">
+        <div class="step stepThree">
           <img
-            class="rightPic animate__animated animate__fadeInRightBig"
+            class="rightPic"
             src="https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624212414/Gamut/Finished_Roadway_1.png"
           />
-          <p class="picText leftText animate__animated animate__fadeInLeftBig"
+          <p class="picText leftText"
             >You receive machine control you then load file on machine and start building.</p
           >
         </div>
@@ -212,6 +193,28 @@
         },
         retina_detect: true,
       });
+
+      // get each step element
+      const firstStep = document.querySelector(".stepOne");
+      const secondStep = document.querySelector(".stepTwo");
+      const thirdStep = document.querySelector(".stepThree");
+
+      window.addEventListener("scroll", () => {
+        // update top position of the elements
+        let topOfFirstStep = firstStep.getBoundingClientRect().top;
+        let topOfSecondStep = secondStep.getBoundingClientRect().top;
+        let topOfThirdStep = thirdStep.getBoundingClientRect().top;
+        let windowHeight = document.documentElement.clientHeight;
+      });
+
+      // add class when its half way up the screen??
+      // Feel dope about it
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js">
+
+
+      const firstStep = document.querySelector(".stepOne");
+      let topOfFirstStep = firstStep.getBoundingClientRect().top;
     </script>
   </body>
 </html>

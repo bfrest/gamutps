@@ -136,6 +136,11 @@ h2 {
 }
 
 .step {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10rem 0 30rem 0;
+  padding: 0;
   height: 15rem;
   width: 100vw;
   background: none;
@@ -148,45 +153,7 @@ h2 {
   width: 80%;
 }
 
-.grayOverlay {
-  background-color: hsla(120, 1%, 28%, 0.7);
-  height: 100%;
-  width: 100%;
-}
-
-.one {
-  background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624190063/Gamut/form-image.png");
-  background-size: contain;
-  margin: 0 0 5rem 0;
-  padding: 0;
-  text-align: center;
-}
-
-.two {
-  background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624189962/Gamut/prov-tank-model.png");
-  background-size: contain;
-  margin: 0 0 5rem 0;
-  padding: 0;
-  text-align: center;
-}
-
-.three {
-  background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624049156/Gamut/7C8A9A02-674D-4A27-8A52-6288CD9D14A8.heic");
-  background-size: cover;
-  margin: 0 0 5rem 0;
-  padding: 0;
-  text-align: center;
-}
-
-.anotherStep {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 10rem 0 30rem 0;
-  padding: 0;
-}
-
-.anotherStep img {
+.step img {
   height: 19rem;
   max-width: 90vw;
   position: absolute;
@@ -232,7 +199,7 @@ h2 {
 
 #contact {
   height: 50vh;
-  margin-bottom: 25vh;
+  margin: 25vh 0 25vh 0;
 }
 
 form {
@@ -275,11 +242,13 @@ canvas {
 footer {
   font-size: 0.8rem;
   width: 100vw;
-  height: 60vh;
-  background-color: black;
-  color: #fefefe;
+  height: 90vh;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+footer img {
 }
