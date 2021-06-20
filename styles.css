@@ -10,6 +10,17 @@ body {
   color: black;
 }
 
+button {
+  background-color: #71bf44;
+  border: none;
+  color: #fefefe;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
 h1,
 h2,
 h3,
@@ -107,7 +118,8 @@ li img {
 
 h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-top: 5rem;
 }
 
 .card p {
@@ -140,7 +152,6 @@ h2 {
   flex-direction: column;
   width: 100%;
   margin: 10rem 0 30rem 0;
-  padding: 0;
   height: 15rem;
   width: 100vw;
   background: none;
@@ -165,12 +176,16 @@ h2 {
   width: 75vw;
   position: relative;
   background-color: white;
-  padding: 1rem;
+  padding: 1.2rem;
   border-radius: 5px;
   border: 2px solid hsla(0, 0%, 89%, 0.561);
   box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
   margin: 10rem 0 0 0;
   position: absolute;
+}
+
+.stepOne .picText {
+  padding-bottom: 3rem;
 }
 
 .leftText {
@@ -191,6 +206,27 @@ h2 {
   right: 0;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
+}
+
+.formBtn {
+  width: 50%;
+  background: none;
+  color: #71bf44;
+  border: none;
+}
+
+.formBtn:hover {
+  cursor: pointer;
+}
+
+.formBtns {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-top: 19rem;
+  align-self: flex-end;
+  position: absolute;
+  right: 30px;
 }
 
 .howItWorks {
@@ -222,17 +258,6 @@ input {
 
 textarea {
   height: 10rem;
-}
-
-button {
-  background-color: #71bf44;
-  border: none;
-  color: #fefefe;
-  padding: 10px;
-  border-radius: 5px;
-  width: 100%;
-  font-size: 1rem;
-  margin-bottom: 50px;
 }
 
 canvas {
