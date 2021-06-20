@@ -155,7 +155,7 @@ h2 {
 }
 
 .one {
-  background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624135987/Gamut/Screen_Shot_2021-06-19_at_2.50.31_PM.png");
+  background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624190063/Gamut/form-image.png");
   background-size: contain;
   margin: 0 0 5rem 0;
   padding: 0;
@@ -163,7 +163,7 @@ h2 {
 }
 
 .two {
-  background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624137007/Gamut/Screenshot_8.png");
+  background-image: url("https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624189962/Gamut/prov-tank-model.png");
   background-size: contain;
   margin: 0 0 5rem 0;
   padding: 0;
@@ -180,33 +180,43 @@ h2 {
 
 .anotherStep {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  margin: 0;
+  margin: 0 0 20rem 0;
   padding: 0;
 }
 
+.anotherStep img {
+  height: 13rem;
+  max-width: 80vw;
+  position: absolute;
+}
+
+.picText {
+  color: black;
+  width: 70vw;
+  height: 5rem;
+  position: relative;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 2px solid hsla(0, 0%, 89%, 0.561);
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin-top: 15rem;
+}
+
 .leftText {
-  margin-left: -40px;
 }
 
 .rightText {
 }
 
 .leftPic {
-  align-self: flex-start;
-  margin: 0 50px 20px -30px;
+  left: 0;
 }
 
 .rightPic {
-  align-self: flex-end;
-  margin: 0 -70px 20px 20px;
-}
-
-.picText {
-  color: black;
-  width: 40%;
-  font-size: 0.8rem;
+  right: 0;
 }
 
 .howItWorks {
