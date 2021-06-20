@@ -202,16 +202,16 @@ h2 {
   border-radius: 5px;
   border: 2px solid hsla(0, 0%, 89%, 0.561);
   box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
-  margin: 6rem 0 0 0;
+  margin: 10rem 0 0 0;
   position: absolute;
 }
 
 .leftText {
-  left: 0;
+  left: 15;
 }
 
 .rightText {
-  right: 0;
+  right: 15;
 }
 
 .leftPic {
