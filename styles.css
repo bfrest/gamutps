@@ -187,15 +187,15 @@ h2 {
 }
 
 .anotherStep img {
-  height: 15rem;
-  max-width: 85vw;
+  height: 19rem;
+  max-width: 90vw;
   position: absolute;
 }
 
 .picText {
   color: black;
   font-size: 1.3rem;
-  width: 70vw;
+  width: 75vw;
   position: relative;
   background-color: white;
   padding: 1rem;
