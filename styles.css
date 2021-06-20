@@ -187,15 +187,15 @@ h2 {
 }
 
 .anotherStep img {
-  height: 13rem;
-  max-width: 80vw;
+  height: 15rem;
+  max-width: 85vw;
   position: absolute;
 }
 
 .picText {
   color: black;
+  font-size: 1.3rem;
   width: 70vw;
-  height: 5rem;
   position: relative;
   background-color: white;
   padding: 1rem;
@@ -213,10 +213,14 @@ h2 {
 
 .leftPic {
   left: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 
 .rightPic {
   right: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
 }
 
 .howItWorks {
