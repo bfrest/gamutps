@@ -119,7 +119,7 @@ li img {
 h2 {
   text-align: center;
   font-size: 1.5rem;
-  margin-top: 5rem;
+  margin: 5rem 0;
 }
 
 .card p {
@@ -184,6 +184,16 @@ h2 {
   position: absolute;
 }
 
+.stepOne {
+  margin-top: 4rem;
+}
+
+.stepTwo {
+}
+
+.stepThree {
+}
+
 .stepOne .picText {
   padding-bottom: 3rem;
 }
@@ -223,10 +233,6 @@ h2 {
   display: flex;
   flex-direction: row;
   width: 80%;
-  margin-top: 19rem;
-  align-self: flex-end;
-  position: absolute;
-  right: 30px;
 }
 
 .howItWorks {
