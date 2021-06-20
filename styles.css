@@ -207,11 +207,11 @@ h2 {
 }
 
 .leftText {
-  left: 4;
+  left: 1rem;
 }
 
 .rightText {
-  right: 4;
+  right: 1rem;
 }
 
 .leftPic {
