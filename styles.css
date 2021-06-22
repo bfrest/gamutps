@@ -18,7 +18,6 @@ button {
   border-radius: 5px;
   width: 100%;
   font-size: 1rem;
-  margin-bottom: 50px;
 }
 
 h1,
@@ -167,25 +166,22 @@ h2 {
 .step img {
   height: 19rem;
   max-width: 90vw;
-  position: absolute;
 }
 
 .picText {
   color: black;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   width: 75vw;
   position: relative;
   background-color: white;
-  padding: 1.2rem;
+  padding: 1rem;
   border-radius: 5px;
   border: 2px solid hsla(0, 0%, 89%, 0.561);
   box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
-  margin: 10rem 0 0 0;
-  position: absolute;
+  margin: -5rem 0 0 0;
 }
 
 .stepOne {
-  margin-top: 4rem;
 }
 
 .stepTwo {
@@ -195,31 +191,32 @@ h2 {
 }
 
 .stepOne .picText {
-  padding-bottom: 3rem;
 }
 
 .leftText {
-  left: 1rem;
 }
 
 .rightText {
-  right: 1rem;
 }
 
 .leftPic {
-  left: 0;
+  align-self: flex-end;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 }
 
 .rightPic {
-  right: 0;
+  align-self: flex-start;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
 }
 
+.formBtns {
+  display: flex;
+  width: 100%;
+}
+
 .formBtn {
-  width: 50%;
   background: none;
   color: #71bf44;
   border: none;
@@ -232,9 +229,6 @@ h2 {
 .formBtns {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  position: relative;
-  margin-top: 28rem;
 }
 
 .howItWorks {
