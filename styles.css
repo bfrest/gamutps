@@ -286,3 +286,7 @@ footer img {
 .hidden {
   display: none;
 }
+
+.bigMarg {
+  margin-bottom: 100vh;
+}
