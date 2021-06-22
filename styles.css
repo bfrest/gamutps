@@ -284,9 +284,6 @@ footer img {
 }
 
 .hidden {
-  display: none;
-}
-
-.bigMarg {
-  margin-bottom: 100vh;
+  opacity: 0;
+  margin-bottom: 80px;
 }
