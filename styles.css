@@ -168,7 +168,7 @@ h2 {
   max-width: 90vw;
 }
 
-.picText {
+.stepText {
   color: black;
   font-size: 1.2rem;
   width: 75vw;
@@ -187,11 +187,11 @@ h2 {
 .stepTwo {
 }
 
-.stepThree .picText {
+.stepThree .stepText {
   padding: 2rem 1rem;
 }
 
-.stepOne .picText {
+.stepOne .stepText {
 }
 
 .leftText {
