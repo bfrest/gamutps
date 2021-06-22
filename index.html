@@ -34,7 +34,7 @@
     </nav>
 
     <div id="particles-js"></div>
-    <div id="header">
+    <div id="header" class="animate__animated animate__fadeIn">
       <h2>Construction is Now Digital</h2>
       <p>We blend technology with construction for foward-thinking companies.</p>
     </div>
@@ -50,7 +50,7 @@
     <h2>We Are Specialists At</h2>
 
     <div class="serviceCards">
-      <div class="card">
+      <div class="card animate__animated animate__fadeInUp">
         <div class="cardHeader">
           <img src="./Component 1.svg" alt="3d" height="60px" />
           <h3>Machine Control Files</h3>
@@ -81,11 +81,11 @@
         <p class="howItWorks">Our Process</p>
         <div class="step stepOne">
           <img
-            class="rightPic"
+            class="rightPic stepOneImg animate__animated"
             src="https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624212414/Gamut/form-image.png"
           />
-          <div class="stepText leftText">
-            <p>Fill out one or both of our forms so we get all the details right.</p>
+          <div class="stepText stepOneText leftText animate__animated">
+            <p>Fill out our forms so we get all the details right.</p>
             <div class="formBtns">
               <button class="formBtn">3D form</button>
               <button class="formBtn">Takeoff form</button>
@@ -95,20 +95,22 @@
 
         <div class="step stepTwo">
           <img
-            class="leftPic"
+            class="leftPic stepTwoImg animate__animated"
             src="https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624212414/Gamut/Road-_Back_Rock_Wall_and_Hifiker_SG_1.png"
           />
-          <p class="stepText rightText"
-            >We create 3D models, polyines and points that are ready for machine control.</p
-          >
+          <p class="stepText stepTwoText rightText animate__animated">
+            We create 3D models, polyines and points that are ready for machine control.
+          </p>
         </div>
 
         <div class="step stepThree">
           <img
-            class="rightPic"
+            class="rightPic stepThreeImg animate__animated"
             src="https://res.cloudinary.com/bfrest/image/upload/f_auto,q_auto/v1624212414/Gamut/Finished_Roadway_1.png"
           />
-          <p class="stepText leftText">Let your work speak for itself</p>
+          <p class="stepText stepThreeText leftText animate__animated"
+            >Let your work speak for itself</p
+          >
         </div>
       </div>
 
@@ -194,27 +196,36 @@
         retina_detect: true,
       });
 
+      //
+
+      // scrolling animation
+
+      //
+
       // get each step element
-      const firstStep = document.querySelector(".stepOne");
-      const secondStep = document.querySelector(".stepTwo");
-      const thirdStep = document.querySelector(".stepThree");
+      const firstStepImg = document.querySelector(".stepOneImg");
+      const secondStepImg = document.querySelector(".stepTwo");
+      const thirdStepImg = document.querySelector(".stepThree");
 
       window.addEventListener("scroll", () => {
         // update top position of the elements
-        let topOfFirstStep = firstStep.getBoundingClientRect().top;
-        let topOfSecondStep = secondStep.getBoundingClientRect().top;
-        let topOfThirdStep = thirdStep.getBoundingClientRect().top;
-        let windowHeight = document.documentElement.clientHeight;
+        let topOfFirstStepImg = firstStepImg.getBoundingClientRect().top;
+        let topOfSecondStepImg = secondStepImg.getBoundingClientRect().top;
+        let topOfThirdStepImg = thirdStepImg.getBoundingClientRect().top;
+        let windowHeight = window.innerHeight;
+
+        if (topOfFirstStepImg + 50 <= windowHeight) {
+          firstStepImg.classList.add("animate__slideInLeft");
+        }
+
+        if (topOfSecondStepImg + 50 <= windowHeight) {
+          secondStepImg.classList.add("animate__slideInLeft");
+        }
+
+        if (topOfThirdStepImg + 50 <= windowHeight) {
+          thirdStepImg.classList.add("animate__slideInLeft");
+        }
       });
-
-      // add class when its half way up the screen??
-      // Feel dope about it
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js">
-
-
-      const firstStep = document.querySelector(".stepOne");
-      let topOfFirstStep = firstStep.getBoundingClientRect().top;
     </script>
   </body>
 </html>
