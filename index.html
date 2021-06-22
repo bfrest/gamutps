@@ -50,7 +50,7 @@
     <h2>We Are Specialists At</h2>
 
     <div class="serviceCards">
-      <div class="card animate__animated animate__fadeInUp">
+      <div class="js-scroll hidden card animate__animated animate__fadeInUp">
         <div class="cardHeader">
           <img src="./Component 1.svg" alt="3d" height="60px" />
           <h3>Machine Control Files</h3>
@@ -58,7 +58,7 @@
         <p> We build 3d surfaces and files for you to use with your smart machines. </p>
       </div>
 
-      <div class="card">
+      <div class="card js-scroll hidden">
         <div class="cardHeader">
           <img src="./Component 2.svg" alt="report" height="60px" />
           <h3>Take Off Report</h3>
@@ -69,7 +69,7 @@
         </p>
       </div>
 
-      <div class="card">
+      <div class="card js-scroll hidden">
         <div class="cardHeader">
           <img src="./satellite 1.svg" alt="gps" height="60px" />
           <h3>Other Services</h3>
@@ -202,29 +202,44 @@
 
       //
 
-      // get each step element
-      const firstStepImg = document.querySelector(".stepOneImg");
-      const secondStepImg = document.querySelector(".stepTwo");
-      const thirdStepImg = document.querySelector(".stepThree");
+      const scrollElements = document.querySelectorAll(".js-scroll");
+
+      const elementInView = (el, dividend = 1) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        return (
+          elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
+        );
+      };
+
+      const elementOutofView = (el) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        return elementTop > (window.innerHeight || document.documentElement.clientHeight);
+      };
+
+      const displayScrollElement = (element) => {
+        element.classList.add("animate__fadeInUp");
+        element.classList.remove("hidden");
+      };
+
+      const hideScrollElement = (element) => {
+        element.classList.remove("animate__fadeInUp");
+        element.classList.add("hidden");
+      };
+
+      const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+          if (elementInView(el, 1.25)) {
+            displayScrollElement(el);
+          } else if (elementOutofView(el)) {
+            hideScrollElement(el);
+          }
+        });
+      };
 
       window.addEventListener("scroll", () => {
-        // update top position of the elements
-        let topOfFirstStepImg = firstStepImg.getBoundingClientRect().top;
-        let topOfSecondStepImg = secondStepImg.getBoundingClientRect().top;
-        let topOfThirdStepImg = thirdStepImg.getBoundingClientRect().top;
-        let windowHeight = window.innerHeight;
-
-        if (topOfFirstStepImg + 50 <= windowHeight) {
-          firstStepImg.classList.add("animate__slideInLeft");
-        }
-
-        if (topOfSecondStepImg + 50 <= windowHeight) {
-          secondStepImg.classList.add("animate__slideInLeft");
-        }
-
-        if (topOfThirdStepImg + 50 <= windowHeight) {
-          thirdStepImg.classList.add("animate__slideInLeft");
-        }
+        handleScrollAnimation();
       });
     </script>
   </body>

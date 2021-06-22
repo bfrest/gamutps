@@ -282,3 +282,7 @@ footer {
 
 footer img {
 }
+
+.hidden {
+  display: none;
+}
