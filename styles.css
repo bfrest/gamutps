@@ -187,7 +187,8 @@ h2 {
 .stepTwo {
 }
 
-.stepThree {
+.stepThree .picText {
+  padding: 1.3rem 1rem;
 }
 
 .stepOne .picText {
