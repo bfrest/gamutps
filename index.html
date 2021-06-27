@@ -134,7 +134,7 @@
       <p>323-994-0093</p>
       <p>justinf@gamutps.com</p>
       <p>GamutPS 2021©</p>
-      <p>Designed & Developed by Brendon Freston</p>
+      <!-- <p>Designed & Developed by Brendon Freston</p> -->
     </footer>
 
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
@@ -220,12 +220,12 @@
 
       const displayScrollElement = (element) => {
         element.classList.add("animate__fadeInUp");
-        element.classList.remove("hidden");
+        element.classList.remove("showMe");
       };
 
       const hideScrollElement = (element) => {
         element.classList.remove("animate__fadeInUp");
-        element.classList.add("hidden");
+        element.classList.add("showMe");
       };
 
       const handleScrollAnimation = () => {
