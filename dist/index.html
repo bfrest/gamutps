@@ -43,8 +43,8 @@
 
     <h2>We Are Specialists At</h2>
 
-    <div class="js-scroll hidden serviceCards">
-      <div class="js-scroll hidden card animate__animated animate__fadeIn">
+    <div class="serviceCards">
+      <div class="card js-scroll hidden animate__animated animate__fadeIn">
         <div class="cardHeader">
           <img src="/Component 1.09e3ea6a.svg" alt="3d" height="60px">
           <h3>Machine Control Files</h3>
@@ -105,8 +105,7 @@
       </div>
     </div>
 
-     <div id="adobe-dc-view" style="width: 800px; box-shadow: 1px 1px 10px 1px #dadada;"></div>
-    <script type="text/javascript" src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <img src="https://res.cloudinary.com/bfrest/image/upload/f_auto/v1624932976/Gamut/Gamut_Takeoff_Request_Form_1.pdf" height="300px">
 </body>
 
     <footer>
@@ -247,12 +246,12 @@ var elementOutofView = function elementOutofView(el) {
 
 var displayScrollElement = function displayScrollElement(element) {
   element.classList.add("animate__fadeInUp");
-  element.classList.remove("showMe");
+  element.classList.add("showMe");
 };
 
 var hideScrollElement = function hideScrollElement(element) {
   element.classList.remove("animate__fadeInUp");
-  element.classList.add("showMe");
+  element.classList.remove("showMe");
 };
 
 var handleScrollAnimation = function handleScrollAnimation() {
@@ -267,51 +266,6 @@ var handleScrollAnimation = function handleScrollAnimation() {
 
 window.addEventListener("scroll", function () {
   handleScrollAnimation();
-});</script>
-
-    <!-- for forms  -->
-    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-    <script>var viewerConfig = {
-  embedMode: "IN_LINE"
-};
-/* Wait for Adobe Document Services PDF Embed API to be ready */
-
-document.addEventListener("adobe_dc_view_sdk.ready", function () {
-  /* Initialize the AdobeDC View object */
-  var adobeDCView = new AdobeDC.View({
-    /* Pass your registered client id */
-    clientId: "ebabb537d11f4d6794ca508c245c54a1",
-
-    /* Pass the div id in which PDF should be rendered */
-    divId: "adobe-dc-view"
-  });
-  /* Invoke the file preview API on Adobe DC View object */
-
-  adobeDCView.previewFile({
-    /* Pass information on how to access the file */
-    content: {
-      /* Location of file where it is hosted */
-      location: {
-        url: "https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"
-        /*
-        If the file URL requires some additional headers, then it can be passed as follows:-
-        header: [
-            {
-                key: "<HEADER_KEY>",
-                value: "<HEADER_VALUE>",
-            }
-        ]
-        */
-
-      }
-    },
-
-    /* Pass meta data of file */
-    metaData: {
-      /* file name */
-      fileName: "Bodea Brochure.pdf"
-    }
-  }, viewerConfig);
 });</script>
   
 </html>
