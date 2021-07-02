@@ -273,6 +273,10 @@ h2 {
 #services {
 }
 
+.howItWorks {
+  font-size: 2rem;
+}
+
 .step {
   display: flex;
   flex-direction: column;
@@ -342,6 +346,7 @@ h2 {
 
 .formBtns {
   display: flex;
+  flex-direction: row;
   width: 100%;
 }
 
@@ -353,15 +358,6 @@ h2 {
 
 .formBtn:hover {
   cursor: pointer;
-}
-
-.formBtns {
-  display: flex;
-  flex-direction: row;
-}
-
-.howItWorks {
-  font-size: 2rem;
 }
 
 #contact {
@@ -452,6 +448,7 @@ footer img {
     width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-bottom: 10rem;
   }
 
   .card {
@@ -467,21 +464,30 @@ footer img {
     height: 100px;
     padding: 15px;
   }
+
   .card h3 {
     font-size: 1.7rem;
     padding-bottom: 15px;
   }
 
-  .card p {
-    font-size: inherit;
-  }
-
   .step {
-    margin: 25vh 0;
+    margin: 10rem 0;
+    height: 30rem;
   }
 
+  .stepText {
+    font-size: 2rem;
+    padding: 3rem;
+    text-align: center;
+  }
+  .howItWorks {
+    font-size: 3rem;
+  }
   .step img {
-    width: 600px;
-    height: 400px;
+    height: 800px;
+  }
+
+  form input {
+    font-size: 2rem;
   }
 }
