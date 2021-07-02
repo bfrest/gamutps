@@ -412,7 +412,7 @@ footer img {
   box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   nav {
     padding: 15px;
     height: 5rem;
@@ -479,15 +479,26 @@ footer img {
     font-size: 2rem;
     padding: 3rem;
     text-align: center;
+    line-height: 2rem;
   }
+
   .howItWorks {
     font-size: 3rem;
   }
+
   .step img {
     height: 800px;
   }
 
   form input {
+    font-size: 1.5rem;
+  }
+
+  textarea {
+    font-size: 1.4rem;
+  }
+
+  form button {
     font-size: 2rem;
   }
 }
