@@ -484,7 +484,6 @@ footer img {
 
   .step {
     height: 40rem;
-    border: 2px solid orange;
     max-width: 90vw;
   }
 
@@ -495,7 +494,6 @@ footer img {
     border: none;
     box-shadow: none;
     text-align: center;
-    border: 2px solid red;
     max-width: 50vw;
   }
 
