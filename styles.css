@@ -283,6 +283,8 @@ h2 {
 
 .howItWorks {
   font-size: 2rem;
+  text-align: center;
+  padding: 5rem 0;
 }
 
 .steps {
