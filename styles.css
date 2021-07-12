@@ -398,11 +398,12 @@ footer {
   color: black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-footer img {
+.footerLogo {
+  height: 10rem;
 }
 
 .showMe {
@@ -484,11 +485,28 @@ footer img {
     max-width: 50vw;
   }
 
-  .stepThree .stepText {
-    padding: 0;
+  .leftText {
+    margin: 0;
+    justify-self: center;
+    align-self: center;
   }
 
-  .leftText {
+  .rightImg {
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .rightText {
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+  }
+
+  .leftImg {
+    margin: 0;
+    justify-self: center;
     align-self: center;
   }
 
@@ -496,7 +514,7 @@ footer img {
     font-size: 3rem;
   }
 
-  .step img {
-    height: 30rem;
+  .stepImg {
+    height: 35rem;
   }
 }
