@@ -405,6 +405,9 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 20rem;
+  background-color: #71bf44;
+  color: #fefefe;
 }
 
 .footerLogo {
