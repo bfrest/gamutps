@@ -433,6 +433,10 @@ a {
   color: inherit;
 }
 
+.hasBtns {
+  padding-top: 40px;
+}
+
 @media (min-width: 900px) {
   nav {
     padding: 15px;
