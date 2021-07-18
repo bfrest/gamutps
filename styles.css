@@ -262,6 +262,7 @@ h2 {
   align-self: center;
   font-size: 1.2rem;
   text-align: center;
+  font-weight: lighter;
 }
 
 .cardHeader {
@@ -278,6 +279,8 @@ h2 {
   color: #2d3436;
   text-decoration-color: #71bf44;
   padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 550;
 }
 
 #services {
