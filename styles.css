@@ -359,8 +359,6 @@ h2 {
 }
 
 #contact {
-  height: 50vh;
-  margin: 10vh 0;
 }
 
 form {
@@ -374,7 +372,11 @@ form {
 form p {
   font-size: 2.2rem;
   padding: 5rem 0;
-  color: #71bf44;
+}
+
+form button {
+  color: white;
+  border: 2px solid #fefefe;
 }
 
 textarea,
@@ -383,12 +385,12 @@ input {
   width: 100%;
   margin-bottom: 30px;
   font-size: 1rem;
-  border: 2px solid hsla(0, 0%, 81%, 0.8);
+  border: none;
   border-radius: 5px;
 }
 
 textarea {
-  min-height: 7rem;
+  max-height: 10rem;
   width: 100%;
 }
 
@@ -399,7 +401,8 @@ canvas {
 footer {
   font-size: 0.8rem;
   width: 100vw;
-  height: 90vh;
+  height: 100%;
+  padding: 20px 0;
   color: black;
   display: flex;
   flex-direction: column;
@@ -412,6 +415,11 @@ footer {
 
 .footerLogo {
   height: 10rem;
+}
+
+.footerInfo {
+  line-height: 3rem;
+  margin-top: 5rem;
 }
 
 .showMe {
