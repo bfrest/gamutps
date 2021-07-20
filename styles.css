@@ -440,6 +440,16 @@ a {
   padding-top: 40px;
 }
 
+.modelInfo {
+  padding-bottom: 45%;
+}
+
+@media (min-width: 700px) {
+  .stepText {
+    width: 40vw;
+  }
+}
+
 @media (min-width: 900px) {
   nav {
     padding: 15px;
@@ -544,5 +554,9 @@ a {
 
   .stepImg {
     height: 35rem;
+  }
+
+  .modelInfo {
+    padding-bottom: 0;
   }
 }
