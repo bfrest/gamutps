@@ -442,6 +442,7 @@ a {
 
 .modelInfo {
   padding-bottom: 45%;
+  margin-top: 100px;
 }
 
 @media (min-width: 700px) {
